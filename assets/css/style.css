@@ -1,0 +1,61 @@
+body{
+	background-image: url("../images/bg.jpg")
+
+    
+}
+
+.gemImage{
+	height: 60px;
+	margin: 10px;
+}
+
+div{
+	background-color: white;
+	margin: 10px;
+	width: 25%
+}
+
+div{
+	border: solid 2px orangered;
+    padding: 5px;
+ 
+}
+
+h1, h3, span{
+	font-weight: bold;
+	text-align: center;
+}
+
+h1{
+	font-size: 30pt;
+}
+
+ol{
+	list-style: decimal inside; 
+}
+ul {
+	list-style: disc inside;
+	text-indent: 20px;
+}
+
+/* Specific Elements */
+div.header, div.gems, div.instructions, div.matchingthenumber, div.winsandlosses, div.usertotal {
+    background-color: #031357;
+    color: rgb(229, 255, 0);
+
+}
+
+div.winsandlosses { 
+    font-size: 15pt;
+}
+
+.usertotal{
+	width: 15%;
+	height: 30px;
+}
+
+audio { 
+	float: right;
+   
+
+}

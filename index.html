@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+
+    <title>Crystal Collector</title>
+</head>
+<body>
+    <div2>
+            <iframe src="https://open.spotify.com/embed/user/spotify/playlist/37i9dQZF1DX4TnpT6vw5rE" width="300" height="380" align = "right" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <audio controls autoplay >
+                <source src="./assets/tm.mp3" type="audio/mpeg" align = "right">
+              </audio>
+        
+    </div2>    
+    
+    <div class="header"> 
+        <h1>Crystal Collector</h1>
+        
+    </div>
+</br>
+    <div class = "instructions"> <!-- blue box with white text CSS -->
+        <h3>Here's how to play this game!</h3>
+    </br>
+    
+    <ol>       
+        <li>You will be given a random # at the start of the game.</li>
+        <li>There are four crystals you see below. By clicking on the Crystal you will add a specific amount of points to your total score.</li>
+        <li>You in the game by matching your total score to random number, you lose the game if your total score gets above the random number.</li>
+        <li>The value of each crystal is hidden from you until you click on it.</li>
+        <li>Each time when the game starts the game will change the values of each crystal</li>
+    </ol>
+  </div>
+
+    <div class = "matchingthenumber">
+        <!-- this is where the randaom number ID will here and display the random numbers -->
+        <h2>Number to get: <span id= "randomNumber"</span></h>
+
+    </div>
+</br>
+    
+    <div class = "winsandlosses"> 
+        <!-- displays the number of wins and losses -->
+        <h2> Wins: <span id = "nwins"></span>
+            <br>
+            Losses: <span id = "nlosses"</h2>
+    </div>
+</br>
+    <div class = "gems">
+        <img src="assets/images/pink.png" class=gemImage id="one" alt="pink Gem">
+        <audio id="audio"><source src="./assets/ring.mp3" type="audio/mpeg"></audio>
+
+        <img src="assets/images/blue.png" class=gemImage id="two" alt="blue Gem">
+        <audio id="audio"><source src="./assets/ring.mp3" type="audio/mpeg"></audio>
+
+        <img src="assets/images/orange.png" class=gemImage id="three" alt="orange Gem">
+        <audio id="audio"><source src="./assets/ring.mp3" type="audio/mpeg"></audio>
+
+        <img src="assets/images/purple.png" class=gemImage id="four" alt="purple Gem">
+        <audio id="audio"><source src="./assets/ring.mp3" type="audio/mpeg"></audio>
+
+    </br>
+    </div>
+</br>
+    <div class="usertotal">
+            <h2>Your total score is:
+                <span id="finalTotal"></span>
+                </h2>
+        </div>
+
+
+
+    </div>
+
+
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+
+
+</body>
+</html>
