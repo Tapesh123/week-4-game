@@ -1,6 +1,7 @@
 body{
-	background-image: url("../images/bg.jpg")
-
+	background-image: url("../images/bg.jpg");
+	background-repeat: no-repeat;
+    background-size: 1536px 764px;
     
 }
 
@@ -42,20 +43,24 @@ ul {
 div.header, div.gems, div.instructions, div.matchingthenumber, div.winsandlosses, div.usertotal {
     background-color: #031357;
     color: rgb(229, 255, 0);
+	
+}
+div.matchingthenumber { 
 
+	font-size: 20pt;
 }
 
+
 div.winsandlosses { 
-    font-size: 15pt;
+    font-size: 12pt;
 }
 
 .usertotal{
-	width: 15%;
-	height: 30px;
+	width: 20%;
+	height: 40px;
+	font-size: 20pt;
 }
 
 audio { 
-	float: right;
-   
-
+	float: top right;
 }
