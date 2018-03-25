@@ -4,7 +4,7 @@ var Random = Math.floor(Math.random()*101+29)
 $('#randomNumber').text(Random);
 //this appends random number to the randomNumber ID  that is located in the HTML doc
 
-//so look below, I am setting up random numbers for each jewel, you will see how i used this later througout the code GANGSTA! Random number will be between 1-23
+//so look below, I am setting up random numbers for each jewel, you will see how i used this later througout the code. Random number will be between 1-23
 var n1 = Math.floor(Math.random()*22+1)
 var n2 = Math.floor(Math.random()*22+1)
 var n3 = Math.floor(Math.random()*22+1)
@@ -25,15 +25,16 @@ function reset (){
   Random = Math.floor(Math.random()*101+29);
   console.log(Random)
   $('#randomNumber').text(Random);
-  var n1 = Math.floor(Math.random()*22+1)
-  var n2 = Math.floor(Math.random()*22+1)
-  var n3 = Math.floor(Math.random()*22+1)
-  var n4 = Math.floor(Math.random()*22+1) 
+  var n1 = Math.floor(Math.random()*12+1)
+  var n2 = Math.floor(Math.random()*12+1)
+  var n3 = Math.floor(Math.random()*12+1)
+  var n4 = Math.floor(Math.random()*12+1) 
   userTotal = 0
   $("#finalTotal").text(userTotal);
   }
 
   function winner(){ 
+   
     alert("You have won, the Great One!!");
     wins++;
     //displays the total wins
@@ -51,7 +52,7 @@ function reset (){
   // now this section is the set up click for the jewels
   //click the first jewel
   $("#one").on("click", function (){    
-    playSong()
+    playSong.play();
     userTotal = userTotal + n1;
     console.log("New userTotal= "+ userTotal);
     $("#finalTotal").text(userTotal);
@@ -65,7 +66,7 @@ function reset (){
     })
     
   $("#two").on("click", function (){
-    playSong()
+    playSong.play();
     userTotal = userTotal + n2;
     console.log("New userTotal= " + userTotal);
     $("#finalTotal").text(userTotal);
@@ -77,7 +78,7 @@ function reset (){
       }
   })
   $("#three").on("click", function (){ 
-    playSong()
+    playSong.play();
     userTotal = userTotal + n3;
     console.log("New userTotal= " + userTotal);
     $("#finalTotal").text(userTotal);
@@ -89,7 +90,7 @@ function reset (){
       }
   });
   $("#four").on("click", function (){ 
-    playSong()
+    playSong.play();
     userTotal = userTotal + n4;
     console.log("New userTotal= " + userTotal);
     $("#finalTotal").text(userTotal);
@@ -101,15 +102,8 @@ function reset (){
 
       }
       })
-      function playSong(){
-        var audio = document.getElementById("audio");
-        audio.play();
-      }
-
-
-  
-
-
+ 
+      var playSong = new Audio("./assets/ring.mp3");
 
 })
 

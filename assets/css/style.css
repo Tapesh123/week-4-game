@@ -1,6 +1,6 @@
 body{
 	background-image: url("../images/bg.jpg");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
     background-size: 1536px 764px;
     
 }
@@ -63,4 +63,5 @@ div.winsandlosses {
 
 audio { 
 	float: top right;
-}
+} 
+/* consider */
